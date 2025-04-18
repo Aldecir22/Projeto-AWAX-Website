@@ -1,0 +1,18 @@
+# Pastas de dependências
+node_modules/
+vendor/
+.venv/
+
+# Arquivos de ambiente/sensíveis
+.env
+.env.local
+
+# Arquivos do sistema/IDE
+.DS_Store
+.vscode/
+*.log
+
+# Output de builds
+dist/
+build/
+*.exe
