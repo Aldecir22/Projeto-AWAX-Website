@@ -1,13 +1,11 @@
-/*Reset na página*/
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box; /* inclui padding e borda no width/height, ajustando o conteúdo. */
+    box-sizing: border-box;
 
 }
 
 
-/*CSS DA INTERFACE*/
 
 body{
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
@@ -20,11 +18,11 @@ header{
     background-color: #000;
     color: #FFF;
 }
-/* conteúdo do cabeçalho*/
+
 .header{
     max-width: 1140px;
     height: 100px; 
-    margin: auto; /* centraliza a .header horizontalmente, dividindo a margem igualmente, pois ela tem max-width e está em um bloco pai (header). */
+    margin: auto; 
     display: flex;
     align-items: center;
 }
@@ -66,14 +64,14 @@ header{
     padding-left: 10px;
     padding-right: 10px;
     height: 100px;
-    display: flex;/*Por padrão, o 'a' é um display:inline, por isso tem que colocar um disp:flex para conseguir aplicar altura nele, nesse caso aqui */
+    display: flex;
     align-items: center;
     border-bottom: 5px solid #000;
     color: #FFF;
 
 }
 
-/*Efeito da borda ao passar o mouse*/
+
 .menu li a:hover{
     border-bottom: 5px solid #b28756;
     color: #ccc;
@@ -84,7 +82,6 @@ header{
     margin-right: 4px;
 }
 
-/*Botão padrão do layout*/
 .button{
     display: inline-block;
     background-color: #b28756;
@@ -110,15 +107,13 @@ header{
 .banner .sliders{
     height: 100%;
     width: 1000vw;
-
-    /*CONF: p/ eliminiar o espaço entre os slide*/
     display: flex; 
 }
 
 .banner .slide{
     height: 100%;
     width:100vw;
-    display: inline-block; /*CONF: p/ deixar os slides um do lado do outro*/
+    display: inline-block; 
     background-color: rgba(0,0,0, 0.8);
 }
 
@@ -146,7 +141,6 @@ header{
     
     text-transform: uppercase;
     margin-top: 20px;
-
 }
 
 .banner .sliders-pointers{
@@ -199,7 +193,7 @@ header{
 
 .default .section-body{
     max-width: 1140px;
-    margin:auto; /*Centraliza o section-body no meio da tela*/    
+    margin:auto;
 }
 
 .default.light {
@@ -378,14 +372,14 @@ header{
 
 .section-team {
     overflow:hidden;
-    max-width: 880px; /*Calc p/ amostragem de 3 slide*/
+    max-width: 880px;
     margin:auto;
 }
 
 .section-team .sliders{
     height: 100%;
     width: 1000vw;
-    display: flex; /*displ-flex: eliminiar o espaço entre os slide*/
+    display: flex; 
 }
 
 .section-team .slide{
@@ -393,7 +387,7 @@ header{
     min-height:300px;
     width:280px;
     margin-right:20px;
-    display: inline-block; /*CONF: p/ deixar os slides um do lado do outro*/
+    display: inline-block;
     background-color:#FFF;
 }
 
@@ -480,7 +474,7 @@ header{
     flex-direction:column;
     align-items:center;
     overflow:hidden;
-    max-width: 880px; /*Calc p/ amostragem de 3 slide*/
+    max-width: 880px;
     margin:auto;
 }
 
@@ -489,7 +483,7 @@ header{
     min-height:300px;
     width:inherit;
     margin-right:20px;
-    display: inline-block; /*CONF: p/ deixar os slides um do lado do outro*/
+    display: inline-block;
 }
 
 .section-clients .slidearea{
@@ -529,15 +523,11 @@ header{
 
 }
 
-
 .section-clients-depoiments p{
     color:#999;
     font-weight:600;
     font-size:12px;
 }
-
-
-
 
 .section-clients .sliders-pointers{
     width:100vw;
@@ -560,8 +550,6 @@ header{
 .sliders-pointers .active{
     background-color: #b28756;
 }
-
-
 
 .section-body-company{
     width:100%;
@@ -1061,7 +1049,6 @@ input:focus {
     border:none;
 }
 
-
 .section-map{
     background-image:url('../images/mapa.jpg');
     background-size:cover;
@@ -1114,7 +1101,6 @@ input:focus {
 
 .section-footer{
     display: flex;
-/*    flex-wrap: wrap; caso responsivo*/ 
     justify-content: space-between;
     align-items:flex-start;
     position:relative;
@@ -1142,8 +1128,7 @@ input:focus {
 .section-footer-text,
 .section-footer-form {
     flex: 1;
-    max-width: 300px; /* Define largura para cada seção */
-
+    max-width: 300px;
 }
 
 .section-footer-icons{
@@ -1268,7 +1253,6 @@ input:focus {
     border:none;
     cursor:pointer
 }
-
 
 
 @media(min-width:450px) and (max-width:800px){
@@ -1417,22 +1401,22 @@ input:focus {
 
     .section-footer {
         display:flex;
-        flex-direction: column; /* Alinha verticalmente no Mobile */
+        flex-direction: column; 
         align-items:center;
     }
 
     .section-footer-form {
-        order: 1; /* Exibe o formulário primeiro */
+        order: 1; 
         max-width: 450px;
         height: 200px;
     }
 
     .section-footer-icons {
-        order: 2; /* Ícones vêm após o formulário */
+        order: 2;
     }
 
     .section-footer-text {
-        order: 3; /* Texto por último */
+        order: 3;
         min-width: 450px;
         height: 220px;
         padding:15px;
@@ -1577,11 +1561,6 @@ input:focus {
         font-size:18px;
     }
 
-
-
-
-
-
     .section-facts{
         flex-wrap: wrap; 
     }
@@ -1651,10 +1630,6 @@ input:focus {
         
     }
 
-    
-
-
-
    .section-map{
         padding:0;
         padding-bottom: 250px;
@@ -1682,22 +1657,22 @@ input:focus {
     
     .section-footer {
         display:flex;
-        flex-direction: column; /* Alinha verticalmente no Mobile */
+        flex-direction: column; 
         align-items:center;
     }
 
     .section-footer-form {
-        order: 1; /* Exibe o formulário primeiro */
+        order: 1;
         max-width: 350px;
         height: 200px;
     }
 
     .section-footer-icons {
-        order: 2; /* Ícones vêm após o formulário */
+        order: 2; 
     }
 
     .section-footer-text {
-        order: 3; /* Texto por último */
+        order: 3; 
         min-width: 350px;
         height: 220px;
         padding:15px;
